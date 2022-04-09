@@ -1,0 +1,53 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "userName":"hieuso1",
+    "password":"hieuso1"
+}
+###
+
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+
+{
+    "userName":"hieusondong123",
+    "password":"phanhieu123"
+}
+###
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "userName":"hieuso1",
+    "password":"hieuso1"
+}
+ 
+
+###
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjQzMWY3YTQ4NGIwZDU0MjAwZTM1NDUiLCJpYXQiOjE2NDg1NjYxMzh9.PtaDf94hnZYqeOr8ETrTBM1AGWZ-ftjRPJhyGUxze0o
+
+
+{   "title":"redux",
+    "description":"học redux",
+    "status":"LEARNING",
+    "url":"redux.org"
+}
+
+###
+GET  http://localhost:5000/api/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjQzMWY3YTQ4NGIwZDU0MjAwZTM1NDUiLCJpYXQiOjE2NDg1NjYxMzh9.PtaDf94hnZYqeOr8ETrTBM1AGWZ-ftjRPJhyGUxze0o
+
+
+###
+DELETE http://localhost:5000/api/posts/62431f8a484b0d54200e3547
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjQzMWY3YTQ4NGIwZDU0MjAwZTM1NDUiLCJpYXQiOjE2NDg1NjYxMzh9.PtaDf94hnZYqeOr8ETrTBM1AGWZ-ftjRPJhyGUxze0o
+
+
+
+
