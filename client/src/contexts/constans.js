@@ -1,6 +1,6 @@
 export const apiUrl =
   process.env.NODE_ENV !== "production"
-    ? "https://safe-refuge-05655.herokuapp.com/api"
+    ? "https://lit-ravine-47968.herokuapp.com/api"
     : "someApiUrl";
 export const LOCAL_STOGARE_TOKEN_NAME = "learnint";
 
